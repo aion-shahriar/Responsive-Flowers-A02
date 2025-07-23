@@ -1,0 +1,66 @@
+
+
+
+
+
+
+
+/* shared styles */
+
+.container {
+    max-width: 1140px;
+}
+
+.orange {
+    color: rgb(233,90,8);
+}
+.dark {
+    color: rgb(0,0,0);
+}
+.light-dark {
+    color: rgba(0,0,0,0.5); 
+}
+
+
+
+
+
+
+
+
+/* navbar styles */
+
+.navbar {
+
+}
+
+/* banner styles */
+.banner-container {
+
+}
+
+/* plant section styles */
+.plant-container {
+
+}
+
+/* plant lover section styles */
+.plant-lover-container {
+
+}
+
+/* latest deals section styles */
+.latest-deals-container{
+    
+}
+
+/* join section styles */
+.join-container {
+
+}
+
+/* footer styles */
+footer {
+
+}
+
