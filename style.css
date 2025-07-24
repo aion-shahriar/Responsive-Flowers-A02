@@ -145,29 +145,138 @@ nav ul li a {
 .card {
     text-align: center;
 }
-
-/* plant lover section styles */
-.plant-lover-container {
-
-}
 .cards-container {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 1rem;
 }
 
+/* plant lover section styles */
+.plant-lover-container {
+    height: 37.5rem;
+    margin-top: 13rem;
+    display: flex;
+    justify-content: space-between;
+}
+.plant-lover-left {
+    flex:1;
+}
+.plant-lover-right{
+    flex: 1;
+}
+
+
 /* latest deals section styles */
 .latest-deals-container{
-
+    margin-top: 8.5rem;
+    text-align: center;
 }
+.img-container {
+    display: flex;
+    justify-content: space-between;
+}
+.img-container-left {
+    display: flex;
+    flex-direction: column;
+}
+.img-top {
+    /* background-image:url("./assets/deal-bloom.png");
+    background-repeat: no-repeat;
+    text-align: center; */
+    height: 13rem;
+    width: 23rem;
+    width: 100%;
+    position: relative;
+    /* background-color: transparent; */
+    /* background-clip: text;
+    background-size: cover;
+    background-position: center; */
+
+    /* color: white; */
+    color: transparent;
+    margin-bottom: 1rem;
+}
+.img-bottom {
+    width: 100%;
+    position: relative;
+    height: 13rem;
+    width: 23rem;
+    border-radius: 1rem;
+}
+
+.img-container-right img {
+    width: 100%;
+    width: 47rem;
+    height: 26.5rem;
+}
+.img-container-right {
+    position: relative;
+}
+
+.text-on-img-center {
+    font-size: 2.5rem;
+    color: white;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.b-plant, .a-plant {
+    font-size: 1.25rem;
+}
+.latest-deals-container img {
+    border-radius: 1rem;
+}
+
 
 /* join section styles */
+.join-container img {
+    width: 100%;
+}
 .join-container {
+    height: 33.3rem;
+    width: 90rem;
+    margin:0 auto;
+    margin-top: 7.5rem;
+    position: relative;
 
+    
 }
 
-/* footer styles */
-footer {
 
+/* footer styles */
+.footer {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-left figure img {
+    width: 8.5rem;
+    height: 5rem;
+}
+
+.footer ul {
+    list-style: none;
+}
+.footer ul li a {
+    text-decoration: none;
+    color: rgb(107,114,128);
+}
+.ul-left{
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    
+}
+.ul-right {
+    display: flex;
+    flex-direction: column;
+    
 }
 
