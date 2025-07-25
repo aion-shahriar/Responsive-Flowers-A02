@@ -164,6 +164,19 @@ nav ul li a {
 .plant-lover-right{
     flex: 1;
 }
+#parent {
+    position: relative;
+    
+}
+#child {
+    width: 18rem;
+    height: 18rem;
+    position: absolute;
+    top: 2000px;
+    left: 700px;
+    /* transform: translate(-50%,-50%); */
+
+}
 
 
 /* latest deals section styles */
@@ -242,8 +255,40 @@ nav ul li a {
     margin:0 auto;
     margin-top: 7.5rem;
     position: relative;
-
-    
+}
+.join-title-on-center {
+    color: white;
+    background-color: transparent;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.join-container input {
+    width: 40rem;
+    height: 3rem;
+    border: none;
+    background-color: white;
+}
+.s-btn {
+    height: 3rem;
+    width: 11.5rem;
+}
+.inp-center {
+    /* color: white;
+    background-color: transparent; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.inp-center input::placeholder {
+    padding-left: 2rem;
+    padding-top: 2.5rem;
 }
 
 
@@ -258,6 +303,12 @@ nav ul li a {
 footer .footer-left figure img {
     width: 8.5rem;
     height: 5rem;
+}
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer ul {
@@ -274,9 +325,122 @@ footer .footer-left figure img {
     grid-template-columns: repeat(1,1fr);
     
 }
+.ul-left p, .ul-right p {
+    padding-top:0.4rem;
+    padding-bottom:0.4rem;
+    color: rgb(101,114,128);
+}
 .ul-right {
     display: flex;
     flex-direction: column;
     
 }
+
+.footer-right figure img {
+    padding-right: 1rem;
+}
+
+
+@media only screen and (max-width:576px) {
+    *{
+        max-width:400px;
+        margin: 0 auto;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    /* nav {
+        margin-top: 0.5rem;
+    } */
+    .banner-container {
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 10rem;
+    }
+    .banner-right {
+        order:-1;
+    }
+    
+    #home,#shop,#about-us {
+        display: none;
+    }
+    .cards-container img {
+        width: 171px;
+        height: 196.5px;
+    }
+    .btn {
+        width: 171px;
+        height: 50px;
+        padding: 10px;
+
+    }
+    .card {
+        width: 100%;
+        width: 180px;
+    }
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .plant-lover-container{
+        flex-direction:column;
+        margin-top: 5rem;
+
+        margin-bottom: 15rem;
+    }
+    .plant-lover-right h1 {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        text-align:start;
+    }
+    .plant-lover-right h1 br {
+        display: none;
+    }
+    .plant-lover-right ul li {
+        padding-bottom: 1.5rem;
+    }
+    .latest-deals-container p br{
+        display: none;
+    }
+    .img-container img {
+        width: 366px;
+        height: 206px;
+        margin-top: 20px;
+    }
+    .img-container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .img-bottom img {
+        border-radius: 0;
+    }
+
+    .join-container {
+        height: 275px;
+        width: 400px;
+        /* margin-bottom: 40rem; */
+    }
+    .join-container h1 {
+        font-size:20px;
+    }
+    .join-container img {
+        height:auto;
+        width: 1005;
+    }
+    input {
+        width: 13rem;
+        height: 3rem;
+    }
+    .footer {
+        /* position:absolute;
+        top:0;
+        left:0; */
+        /* position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%; */
+    }
+}
+
 
