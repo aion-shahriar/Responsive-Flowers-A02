@@ -171,9 +171,10 @@ nav ul li a {
 #child {
     width: 18rem;
     height: 18rem;
+    background: none;
     position: absolute;
     top: 2000px;
-    left: 700px;
+    left: 550px;
     /* transform: translate(-50%,-50%); */
 
 }
@@ -242,6 +243,7 @@ nav ul li a {
 }
 .latest-deals-container img {
     border-radius: 1rem;
+    filter:brightness(50%);
 }
 
 
@@ -251,7 +253,7 @@ nav ul li a {
 }
 .join-container {
     height: 33.3rem;
-    width: 90rem;
+    max-width: 90rem;
     margin:0 auto;
     margin-top: 7.5rem;
     position: relative;
@@ -311,30 +313,17 @@ footer .footer-left figure img {
     align-items: center;
 }
 
-.footer ul {
-    list-style: none;
-}
-.footer ul li a {
-    text-decoration: none;
-    color: rgb(107,114,128);
-}
-.ul-left{
-    /* display: flex;
-    flex-direction: column; */
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    
+
+.ul-left,.ul-right{
+    display: flex;
+    flex-direction: column;   
 }
 .ul-left p, .ul-right p {
     padding-top:0.4rem;
     padding-bottom:0.4rem;
     color: rgb(101,114,128);
 }
-.ul-right {
-    display: flex;
-    flex-direction: column;
-    
-}
+
 
 .footer-right figure img {
     padding-right: 1rem;
@@ -356,7 +345,7 @@ footer .footer-left figure img {
     .banner-container {
         flex-direction: column;
         align-items: stretch;
-        margin-bottom: 10rem;
+        margin-bottom: 15rem;
     }
     .banner-right {
         order:-1;
@@ -386,7 +375,7 @@ footer .footer-left figure img {
         flex-direction:column;
         margin-top: 5rem;
 
-        margin-bottom: 15rem;
+        margin-bottom: 25rem;
     }
     .plant-lover-right h1 {
         font-size: 1.6rem;
@@ -425,22 +414,70 @@ footer .footer-left figure img {
         font-size:20px;
     }
     .join-container img {
-        height:auto;
-        width: 1005;
+        /* width: 430px; */
+        height: 275px;
+        /* margin: 0; */
+        width: 100%;
+        /* height: auto;
+        display: block; */
+        object-fit: cover;
+    
+
+    }
+    .join-container input {
+        height: 3rem;
+        width: 200px;
+    }
+    .join-container button {
+        height: 3rem;
+        width: 100px;
+    }
+    .join-title-on-center {
+        width: 80%;
+        top: 40%;
+    }
+    #child{
+        display: none;
     }
     input {
         width: 13rem;
         height: 3rem;
     }
     .footer {
-        /* position:absolute;
-        top:0;
-        left:0; */
-        /* position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%; */
+        flex-direction: column;
+        /* text-align: left; */
+        /* align-items: flex-start; */
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-top: 1rem;
+        height: 80rem;
     }
+    
+    
+    .footer-left img {
+        width: 180px;
+        height: 109px;
+        margin-bottom: 2rem;
+    }
+    .footer-left {
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .ul-left,.ul-right{ 
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2rem;
+        margin-left: 0.5rem;
+        margin-bottom: 2rem;
+    }
+    .footer-right {
+        margin: 0.5rem;
+    }
+    
 }
 
 
